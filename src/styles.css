@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+table {
+  width: 100%;
+  table-layout: fixed;
+  word-break: break-all;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+img,
+fieldset,
+hr {
+  border: 0 none;
+}
+ul,
+li {
+  list-style: none;
+}
+.mouseover:hover {
+  cursor: pointer;
+}
+#root {
+  width: 100%;
+  height: 100%;
+}
+#container {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+/* 상단메뉴 */
+#TopMenu {
+  width: 100%;
+  height: 80px;
+  background-color: #ddd;
+}
+#TopMenu > div {
+  float: left;
+}
+#logo_div {
+  width: 200px;
+  background-color: #000;
+  padding: 10px;
+}
+#logo_div img,
+#MenuCategory ul {
+  width: 100%;
+  height: 100%;
+}
+#logo_div,
+#MenuCategory,
+#MenuCategory ul li {
+  float: left;
+  height: 100%;
+}
+#MenuCategory ul li {
+  font-size: 20px;
+  padding: 25px 40px;
+}
+#MenuCategory ul li:hover {
+  background-color: #bbb;
+}
+/* 본문 */
+#Contents {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 80%);
+  background-color: #ee9;
+  height: 600px;
+}
+#SideMenu {
+  flex: 1;
+  background-color: #ee9;
+  max-width: 200px;
+  min-width: 200px;
+}
+#SideMenu li {
+  padding: 10px;
+}
+#Detail {
+  flex: 4;
+  background-color: #9ee;
+}
